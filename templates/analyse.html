@@ -6,8 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>your required text is :</h1>
-    {{dict}}
+
+    <h1>YOUR REQUIRED TEXT IS :</h1>
+    <pre>{{dict}}</pre>
+
+    {% if num_of_characters == "on" %}
+    <h1>NUMBER OF CHARACTERS ARE :</h1> 
+    <h3>{{char_count}}</h3>
+    {% endif %}
+
 
 </body>
 </html>

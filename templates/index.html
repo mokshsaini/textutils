@@ -8,9 +8,9 @@
 </head>
 
 <body>
-    <h1>mission {{mission}} successful {{name}} &#128521;</h1><br>
+    <h1>ENTER THE TEXT:</h1><br>
     <div>
-        <form action="/analyse" id="form" method="get">
+        <form action="/analyse" id="form" method="post"> {% csrf_token %}
             <textarea cols="30" rows="10" name="text" style='margin: 0px; width: 1407px; height: 437px; font-size: 50pt'></textarea><br>
             <input id="punc" type="checkbox" name="removepunc" style="font-size: 15pt" value="on">remove punctuations<br>
             <input id="newline" type="checkbox" name="removenewlines" style="font-size: 15pt">remove new lines<br>
